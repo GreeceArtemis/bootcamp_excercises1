@@ -18,10 +18,7 @@ function holamundo(hola){
      return "Hola Mundo";
     }
 }
-
-}
-
 //
-if(typeof exports !== 'undefined'){
-  exports.hola=hola;
+if(typeof exports !== 'undefined') {
+    exports.holamundo = holamundo;
 }
