@@ -1,0 +1,15 @@
+var assert = require('assert');
+var Mensaje = require('../ejercicio1.js');
+
+//
+describe('hola',function(){
+    it ('Return the correct message if the param is string',function(){
+      assert.equal(Mensaje.hola("es"),"Hola Mundo")
+      assert.equal(Mensaje.hola("en"),"Hello World")
+    })
+    it ('Return option if the param is not string or is undefined',function(){
+      assert.equal(Mensaje.hola(3),"Ingrese un opción indicada")
+      assert.equal(Mensaje.hola([3,4,5]),"Ingrese un opción indicada")
+    })
+
+})
